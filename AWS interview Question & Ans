@@ -1,0 +1,388 @@
+Introduction:-
+
+What is cloud computing ?
+Ans: Cloud Computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying, owning,and maintaining physical data centers and servers, you can access technology services,such as computing power, storage, and database
+
+Deployment Model in Cloud ?
+Ans : There are offers various deployment model in cloud 
+Public Cloud : It is accessible to the public. Public deployment models in the cloud are perfect for organizations with growing and fluctuating demands. It also makes a great choice for companies with low-security concerns.
+
+Private Cloud : The private cloud offers bigger opportunities that help meet specific organizations' requirements when it comes to customization. It's also a wise choice for mission-critical processes that may have frequently changing requirements.
+
+Community Cloud : The community cloud operates in a way that is similar to the public cloud. There's just one difference - it allows access to only a specific set of users who share common objectives and use cases. This type of deployment model of cloud computing is managed and hosted internally or by a third-party vendor.
+Hybrid Cloud : 1.Hybrid cloud is a combination of two or more cloud architectures. While each model in the hybrid cloud functions differently, it is all part of the same architecture. 2. The hybrid cloud is also frequently used for 'cloud bursting'. It means, suppose an organization runs an application on-premises, but due to heavy load, it can burst into the public cloud. 
+
+Community Cloud : They offer a collaborative cloud infrastructure where organizations can share resources, costs, and services while maintaining a degree of isolation from the public cloud.
+
+Multi Cloud : A multi-cloud strategy involves using services and resources from multiple cloud providers. Managing a multi-cloud environment can be complex, but it provides flexibility and redundancy.
+
+3. Service Model in Cloud ?
+Ans : There are the following three types of cloud service models -
+Infrastructure as a Service(IaaS) : IaaS is also known as Hardware as a Service (HaaS). It is a computing infrastructure managed over the internet. The main advantage of using IaaS is that it helps users to avoid the cost and complexity of purchasing and managing the physical servers.
+Example: DigitalOcean, Linode, Amazon Web Services (AWS), Microsoft Azure, Google Compute Engine (GCE), Rackspace, and Cisco Metacloud.
+
+Platform as a Service (PaaS) : PaaS cloud computing platform is created for the programmer to develop, test, run, and manage the applications.
+Example: AWS Elastic Beanstalk, Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos, Magento Commerce Cloud, and OpenShift.
+Software as a Service (SaaS) : SaaS is also known as "on-demand software". It is a software in which the applications are hosted by a cloud service provider. Users can access these applications with the help of internet connection and web browser.
+Example: BigCommerce, Google Apps, Salesforce, Dropbox, ZenDesk, Cisco WebEx, ZenDesk, Slack, and GoToMeeting.
+
+4. Architecture of Cloud Computing ?
+Ans: 
+Frond End : The front end is used by the client. It contains client-side interfaces and applications that are required to access the cloud computing platforms. The front end includes the web.
+
+Back End : The back end is used by the service provider. It manages all the resources that are required to provide cloud computing services. It includes a huge amount of data storage, security mechanisms, virtual machines, deploying models, servers, traffic control mechanisms, etc.
+
+ Client Infrastructure :  Client Infrastructure is a Front end component. It provides GUI (Graphical User Interface)  to interact with the cloud.
+
+Applications : The application may be any software or platform that a client wants to access.
+
+Services : Cloud computing offers the following three types of services.
+Infrastructure as a Service(IaaS) 
+Platform as a Service (PaaS) 
+Software as a Service (SaaS) 
+6. Runtime Cloud : Runtime Cloud provides the execution and runtime environment to the virtual machines.
+7. Storage : Storage is one of the most important components of cloud computing. It provides a huge amount of storage capacity in the cloud to store and manage data.
+8. Infrastructure : It provides services on the host level, application level, and network level. Cloud infrastructure includes hardware and software components such as servers, storage, network devices, virtualization software, and other storage resources that are needed to support the cloud computing model.
+9. Management : Management is used to manage components such as application, service, runtime cloud, storage, infrastructure, and other security issues in the backend and establish coordination between them.
+10 Security : Security is an in-built back end component of cloud computing. It implements a security mechanism in the back end.
+11. Internet : The Internet is a medium through which the front end and back end can interact and communicate with each other.
+
+
+5. AWS Global Infrastructure Count ?
+Ans:  Launched Regions = 32 (each with multiple AZ’s)
+         Availability Zone = 102
+         Points of Presence = 550+ (13 Regional Edge caches) 
+
+
+6.Why do we use region ?
+Ans: To achieve the greatest possible fault tolerance and stability.
+
+
+7.What is service ? & What are resources ?
+Ans: There are various types of services available in AWS
+
+1. Amazon IAM (Identity and Access Management) for Identities of user and service
+2.Amazon EC2 (Elastic Compute Cloud) for virtual server hosting,
+3.Amazon S3 (Simple Storage Service) for scalable object storage
+4. Amazon RDS (Relational Database Service) for managed relational databases
+5.Amazon Lambda for serverless computing, and many others.
+
+Resource : Every service has its own resource to build and run your applications and infrastructure in the cloud. Each resource may have its own attributes, settings, and configurations that you can define based on your specific requirements.
+
+IAM:-
+
+1.How many resources do we have in IAM ?
+Ans: Some of primary IAM  resource are
+Users
+Groups
+Roles
+Policies
+Access keys
+SSO (Single Sign-On) Configuration
+Service-Specific Resources
+
+2.Deployment model in IAM ?
+Ans: 
+User-Based Model
+Group-Based Model
+Role-Based Model
+Resource-Based Model
+Service-Linked Roles
+Cross-Account Access
+
+3.Identities in IAM ?
+Ans: IAM identities are created to provide authentication for people and processes in your aws account.
+IAM Users
+IAM Groups
+IAM Roles
+
+4. What is an IAM User ?
+Ans:  
+It is an entity  that provides a way to interact with AWS resources.
+The main purpose of IAM Users is that they can sign in to the AWS Management Console and can make requests to the AWS services.
+The newly created IAM users have no password and no access key. If a user wants to use the AWS resources using the AWS Management Console, you need to create the user password. If a user wants to interact using the AWS programmatically (using the CLI (Command Line Interface)), you need to create the access key for that user. The credentials created for IAM User are what exactly uniquely identify themselves to AWS.
+The security of the user's credentials can be enhanced by using the feature, i.e., Multi-Factor Authentication.
+The newly created IAM Users do not have permissions, i.e., they are not authorized to access the AWS resources.
+
+5. What is the IAM Group ?
+Ans: 
+An IAM Group is a collection of users.
+Group specifies the permission for a collection of users, and it also makes it possible to manage the permissions easily for those users.
+You created a group known as Admin and assigned the permissions to the group that administrators typically need. Any user joins the admin group; then the user will have all the permissions that are assigned to the group.
+
+6.What is the IAM Policy ?
+Ans: 
+Policies are nothing but the permissions, identity based policy and resource based policy.
+Policy is a  resource of IAM service.
+Bunch of permission that provides the permission to the identity like (users, group, roles).
+ 
+7. What is the IAM Role ? 
+Ans : 
+1. It’s give temporary access
+2.Better way to provide access
+3.Less human interaction 
+4.Service level permission.
+
+8.Where do we attach Identity Based Policy ?
+Ans : We can attach  Identity Based Policies in User level, Group level, Role level, Resource & Service Control Policies.
+
+9.Where do we attach a Resource Based Policy ?
+Ans : We can attach Resource based policy to the s3 Buckets, Lambda Functions,API gateway,SQS Queues.
+
+10.Can we be able to create Policy via json code ?
+Ans : Yes, you can create policies using JSON (JavaScript Object Notation) code, especially when dealing with policy-based systems, access control, or configuration management. 
+
+11. If one user has created it by default, which permission has been assigned to that user ?
+Ans : In this case default permission has been assigned to the user.
+
+12. What is dominator policy ?
+Ans :  
+Dominator Policy mens Administrator policy (full access policy) given  to the users.
+IAM in AWS allows you to manage access to your AWS resources by creating policies that define permissions and attaching those policies to IAM users, groups, or roles.
+
+13. What is ARN ? What are the fields in ARN ?
+Ans : ARN stands for  “Amazon Resource Name” which means unique identity number.
+ARN Fields are
+arn : <partition> :  <service_name> : <account_Id> : < user/admin>
+
+14. How many types of ARN Partition ?
+Ans: 5
+
+15. What are Tags ?
+Ans : 
+Basically tag is nothing but identification of our resource according to our environment,client, resource owner.
+It is set by key value pairs like Key : value.
+
+S3:-
+
+16. Difference between Block storage & Object Storage ?
+Ans: 
+Object storage                                                  Block Storage
+1.Store files as objects.                            1.Can store files but requires additional budget and management resources to support files on block storage.
+2.Can store unlimited metadata for any object,
+Define custom metadata fields.                       2.Uses very little associated metadata.
+3.Stores unlimited data with minimal latency.        3.High-performance, low latency, and rapid data transfer.
+4.Distributed across multiple storage nodes.         4.Distributed across SSDs and HDDs.
+5.Unlimited scale.                                   5.Somewhat limited.
+
+17. Difference between static website & dynamic website ?
+Ans : 
+  Static Website                                                                                  Dynamic Website
+1. Content on a Static website is stable and does not change.                     1.Content on a Dynamic website can change according to how you want it.
+2. Content on a Static website is stored directly on the server.                  2. Content on a Dynamic website is stored in a database.
+3. Content changes on a Static website need to be made page by page.              3. Content on a Dynamic website can be made across hundreds of pages automatically.
+4. Static websites can be created fast but require more content management.       4. Dynamic websites  may take longer to initially setup but long term they can be efficient to manage.
+
+
+18. What are the naming rules ?
+Ans : The following are some of the rules:
+ The bucket name can be between 3 and 63 characters long, and can contain only lower-case characters, numbers, periods, and dashes. 
+Each label in the bucket name must start with a lowercase letter or number.
+
+ 19.What is the major resource of S3 Bucket ?
+Ans: Amazon S3 resources to which the policy applies include buckets, objects, jobs, and access points.The AWS::S3::Bucket resource creates an Amazon S3 bucket in the same AWS Region.
+
+
+20. Why do we need to host static websites instead of dynamic websites ?
+Ans: Static websites are faster to create and publish, since they are less complex and don't need to be connected to databases of organized content.Also host static website included below field: 
+1.Performance
+2.Simplicity
+3.Security
+4.Scalability
+5.Reliability
+6.Cost-Efficiency
+
+21.What is versioning & Why do we need versioning ?
+Ans: 
+1.Versioning means unique identifiers or numbers to different iterations or revisions of a document, software, project, or any other form of content or data. 
+2.The primary purpose of versioning is to keep track of and manage changes made to something over time.
+3.Versioning is  keeping the multiple forms of an object in the same S3 bucket. Versioning can be used to retrieve, preserve and restore every version of an object in S3 bucket.
+4.It stores all versions of an object (including all writes and even if you delete an object).
+5.It is a great backup tool.
+6.Once the versioning is enabled, it cannot be disabled, only suspended.
+
+
+22.What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Ans: The object's content (data), the object's metadata (which includes object size, name, last modified date, and URL), and the object's unique identifier.
+Types of objects :Files, Static Website content, Backup,Data Object Madia files,Data Archive, Logs File,Configuration files
+
+23.Why is MFA Delete important at S3 Bucket object level ?
+Ans: 
+1.MFA (Multi-Factor Authentication) Delete is an additional security feature  provided by Amazon S3 bucket.
+2.It helps to prevent accidental deletions, enabling MFA delete helps prevent unauthorized individuals from deleting data, reducing the risk of data loss.
+3.Extra authentication factor makes it more difficult for unauthorized users to delete objects from an S3 bucket.
+
+24. What is S3 Multipart upload ?
+Ans : Multipart uploads are commonly used when uploading large files, such as video files, backups, and datasets, to Amazon S3. They provide a more robust and efficient way to manage these large objects in the cloud storage service.It is  a faster, easier and flexible method to upload large files, known as “multipart upload”.
+
+25.What are the storage classes in Amazon S3 ?
+Ans: There are various storage classes in s3
+Standard
+Intelligent-Tiering
+One Zone-Infrequent Access
+Glacier
+Glacier Deep Archive
+Reduced Redundancy Storage (RRS)
+26. What is ACL ?
+Ans: These are attached to individual objects within a bucket and define permissions at the object level. Each object can have its own ACL, which can specify who has read and write access to that specific object.
+27.Why do we need an ACL ?
+Ans : ACl is important because it will manage permissions for S3 resources, and they can be used in combination with bucket policies and Identity and Access Management (IAM) policies to provide fine-grained access control.
+28. What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+Ans : 
+Lifecycle policies allow you to automatically review objects within your S3 Buckets and have them moved to Glacier or have the objects deleted from S3.
+These policies are typically used to automate the process of managing data throughout its entire lifecycle, from creation to deletion. 
+The primary goal of a life cycle policy is to optimize data storage costs, improve data access efficiency, and Disaster Recovery.
+29.How can we make our bucket public ?
+Ans:  
+Open the Amazon s3 console.
+ From the list of buckets, choose the bucket with the objects that you want to update.
+Navigate to the folder that contains the objects.
+ From the object list, select all the objects that you want to make public.
+Choose Actions, and then choose Make public.
+ In the Make public dialog box, confirm that the list of objects is correct.
+Choose Make public.
+30. How can we give public access to our bucket ?
+Ans: 
+Under Buckets, choose the name of your bucket.
+Choose Permissions.
+Under Bucket Policy, choose Edit.
+To grant public read access for your website, copy the following bucket policy, and paste it in the Bucket policy editor. ...
+Update the Resource to your bucket name. ...
+Choose Save changes.
+
+
+31. Aws pricing factor of the S3 Service.
+Ans : There are some of the key factors that can affect the pricing of Amazon S3:
+Storage Classes
+Storage usage
+Data transfer costs
+Requests And Operations
+Lifecycle Policies
+Data Retrieval Costs (Glacier and Glacier Deep Archive)
+Cross Region Replication
+Data Transfer Acceleration
+Data Protection
+    32.How can we make our object public ?
+    Ans: 
+Go to the AWS management console and navigate to the s3 service.
+Select the s3 bucket containing the object you want to make public.
+Find the object in the bucket and click on its name to open the object details.
+Click on the Action button then select Make Public.
+Confirm the public access setting in the dialog box.
+
+
+33.How can we configure the static website logs in s3 ?
+Ans : 
+Create an S3 Bucket for Logs:
+Enable Logging for the Website Bucket:
+Set Permissions
+Configure Log File Prefix
+Review and Save
+Access and Analyze Logs
+34.What is CORS ?
+Ans: 
+It is Cross-Origin Resource Sharing.
+It  is a security feature implemented in web browsers to allow or restrict web pages from making requests to a different domain than the one that served the web page. 
+It is a crucial part of web security and is particularly relevant when working with web applications that fetch resources from multiple domains.
+This is important when you want to allow or restrict web applications hosted on different domains from accessing and using resources stored in your S3 buckets.
+
+
+35.What is S3 Inventory ?
+Ans : 
+S3 inventory that allows you to regularly collect and store metadata about your objects in an S3 bucket. 
+This metadata includes details about the objects themselves, such as their name, size, and storage class, as well as information about their encryption and access control settings.
+S3 Inventory can be configured to deliver reports on a daily or weekly basis, and you can specify which details you want to include in the reports.
+
+
+36.What does it mean by Requester pays ?
+Ans : 
+The bucket owner always pays the cost of storing data.
+The requester pays to allow  the bucket owner, pays for data transfer and data access charges associated with objects in the bucket. 
+This can be useful in scenarios where you want to share data with others but want to ensure that the costs associated with accessing that data are covered by the requester.
+
+
+37. What is the secondary word to Transfer acceleration ? Why do we need to use this transfer acceleration ?
+Ans : 
+S3 Transfer Acceleration is a feature that leverages Amazon CloudFront's globally distributed edge locations to accelerate uploads and downloads of objects to and from an S3 bucket. 
+It is particularly useful when you need to transfer data over the internet with improved speed and performance.
+We need to use it because of Faster Data Transfer, Security, Simplified Configuration, Global Reach.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+

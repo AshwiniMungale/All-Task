@@ -1,9 +1,9 @@
 Introduction:-
 
-What is cloud computing ?
+1.What is cloud computing ?
 Ans: Cloud Computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying, owning,and maintaining physical data centers and servers, you can access technology services,such as computing power, storage, and database
 
-Deployment Model in Cloud ?
+2.Deployment Model in Cloud ?
 Ans : There are offers various deployment model in cloud 
 Public Cloud : It is accessible to the public. Public deployment models in the cloud are perfect for organizations with growing and fluctuating demands. It also makes a great choice for companies with low-security concerns.
 
@@ -82,13 +82,7 @@ SSO (Single Sign-On) Configuration
 Service-Specific Resources
 
 2.Deployment model in IAM ?
-Ans: 
-User-Based Model
-Group-Based Model
-Role-Based Model
-Resource-Based Model
-Service-Linked Roles
-Cross-Account Access
+Ans: User-Based Model, Group-Based Model, Role-Based Model, Resource-Based Model, Service-Linked Roles, Cross-Account Access
 
 3.Identities in IAM ?
 Ans: IAM identities are created to provide authentication for people and processes in your aws account.
@@ -222,90 +216,80 @@ Intelligent-Tiering
 One Zone-Infrequent Access
 Glacier
 Glacier Deep Archive
-Reduced Redundancy Storage (RRS)
+Reduced Redundancy Storage (RRS) 
+
 26. What is ACL ?
 Ans: These are attached to individual objects within a bucket and define permissions at the object level. Each object can have its own ACL, which can specify who has read and write access to that specific object.
+
 27.Why do we need an ACL ?
 Ans : ACl is important because it will manage permissions for S3 resources, and they can be used in combination with bucket policies and Identity and Access Management (IAM) policies to provide fine-grained access control.
+
 28. What is a Life cycle policy ? Why do we need to use the life cycle rule ?
 Ans : 
 Lifecycle policies allow you to automatically review objects within your S3 Buckets and have them moved to Glacier or have the objects deleted from S3.
 These policies are typically used to automate the process of managing data throughout its entire lifecycle, from creation to deletion. 
 The primary goal of a life cycle policy is to optimize data storage costs, improve data access efficiency, and Disaster Recovery.
+
 29.How can we make our bucket public ?
-Ans:  
-Open the Amazon s3 console.
- From the list of buckets, choose the bucket with the objects that you want to update.
-Navigate to the folder that contains the objects.
- From the object list, select all the objects that you want to make public.
-Choose Actions, and then choose Make public.
- In the Make public dialog box, confirm that the list of objects is correct.
-Choose Make public.
+Ans:  1.Open the Amazon s3 console.
+2. From the list of buckets, choose the bucket with the objects that you want to update.
+3.Navigate to the folder that contains the objects.
+4.From the object list, select all the objects that you want to make public.
+5.Choose Actions, and then choose Make public.
+6.In the Make public dialog box, confirm that the list of objects is correct.Choose Make public.
+
 30. How can we give public access to our bucket ?
-Ans: 
-Under Buckets, choose the name of your bucket.
-Choose Permissions.
-Under Bucket Policy, choose Edit.
-To grant public read access for your website, copy the following bucket policy, and paste it in the Bucket policy editor. ...
-Update the Resource to your bucket name. ...
-Choose Save changes.
+Ans: 1.Under Buckets, choose the name of your bucket. 2.Choose Permissions. 3.Under Bucket Policy, choose Edit. 4.To grant public read access for your website, copy the following bucket policy, and paste it in the Bucket policy editor. ...
+5.Update the Resource to your bucket name. ...6.Choose Save changes.
 
 
 31. Aws pricing factor of the S3 Service.
 Ans : There are some of the key factors that can affect the pricing of Amazon S3:
-Storage Classes
-Storage usage
-Data transfer costs
-Requests And Operations
-Lifecycle Policies
-Data Retrieval Costs (Glacier and Glacier Deep Archive)
-Cross Region Replication
-Data Transfer Acceleration
-Data Protection
-    32.How can we make our object public ?
-    Ans: 
-Go to the AWS management console and navigate to the s3 service.
-Select the s3 bucket containing the object you want to make public.
-Find the object in the bucket and click on its name to open the object details.
-Click on the Action button then select Make Public.
-Confirm the public access setting in the dialog box.
+Storage Classes, Storage usage, Data transfer costs, Requests And Operations, Lifecycle Policies, Data Retrieval Costs (Glacier and Glacier Deep Archive), Cross Region Replication ,Data Transfer Acceleration
+Data Protection.
+ 
+32.How can we make our object public ?
+Ans: 
+1.Go to the AWS management console and navigate to the s3 service.
+2.Select the s3 bucket containing the object you want to make public.
+3.Find the object in the bucket and click on its name to open the object details.
+4.Click on the Action button then select Make Public.
+5.Confirm the public access setting in the dialog box.
 
 
 33.How can we configure the static website logs in s3 ?
-Ans : 
-Create an S3 Bucket for Logs:
-Enable Logging for the Website Bucket:
-Set Permissions
-Configure Log File Prefix
-Review and Save
-Access and Analyze Logs
+Ans : 1.Create an S3 Bucket for Logs:
+2.Enable Logging for the Website Bucket:
+3.Set Permissions
+4.Configure Log File Prefix
+5.Review and Save
+6.Access and Analyze Logs
+
 34.What is CORS ?
-Ans: 
-It is Cross-Origin Resource Sharing.
-It  is a security feature implemented in web browsers to allow or restrict web pages from making requests to a different domain than the one that served the web page. 
-It is a crucial part of web security and is particularly relevant when working with web applications that fetch resources from multiple domains.
-This is important when you want to allow or restrict web applications hosted on different domains from accessing and using resources stored in your S3 buckets.
+Ans: 1.It is Cross-Origin Resource Sharing.
+2.It  is a security feature implemented in web browsers to allow or restrict web pages from making requests to a different domain than the one that served the web page. 
+3.It is a crucial part of web security and is particularly relevant when working with web applications that fetch resources from multiple domains.
+4.This is important when you want to allow or restrict web applications hosted on different domains from accessing and using resources stored in your S3 buckets.
 
 
 35.What is S3 Inventory ?
-Ans : 
-S3 inventory that allows you to regularly collect and store metadata about your objects in an S3 bucket. 
-This metadata includes details about the objects themselves, such as their name, size, and storage class, as well as information about their encryption and access control settings.
-S3 Inventory can be configured to deliver reports on a daily or weekly basis, and you can specify which details you want to include in the reports.
+Ans : 1.S3 inventory that allows you to regularly collect and store metadata about your objects in an S3 bucket. 
+2.This metadata includes details about the objects themselves, such as their name, size, and storage class, as well as information about their encryption and access control settings.
+3.S3 Inventory can be configured to deliver reports on a daily or weekly basis, and you can specify which details you want to include in the reports.
 
 
 36.What does it mean by Requester pays ?
-Ans : 
-The bucket owner always pays the cost of storing data.
-The requester pays to allow  the bucket owner, pays for data transfer and data access charges associated with objects in the bucket. 
-This can be useful in scenarios where you want to share data with others but want to ensure that the costs associated with accessing that data are covered by the requester.
+Ans : 1.The bucket owner always pays the cost of storing data.
+2.The requester pays to allow  the bucket owner, pays for data transfer and data access charges associated with objects in the bucket. 
+3.This can be useful in scenarios where you want to share data with others but want to ensure that the costs associated with accessing that data are covered by the requester.
 
 
 37. What is the secondary word to Transfer acceleration ? Why do we need to use this transfer acceleration ?
-Ans : 
-S3 Transfer Acceleration is a feature that leverages Amazon CloudFront's globally distributed edge locations to accelerate uploads and downloads of objects to and from an S3 bucket. 
-It is particularly useful when you need to transfer data over the internet with improved speed and performance.
-We need to use it because of Faster Data Transfer, Security, Simplified Configuration, Global Reach.
+Ans : 1.S3 Transfer Acceleration is a feature that leverages Amazon CloudFront's globally distributed edge locations to accelerate uploads and downloads of objects to and from an S3 bucket. 
+2.It is particularly useful when you need to transfer data over the internet with improved speed and performance.
+3.We need to use it because of Faster Data Transfer, Security, Simplified Configuration, Global Reach.
+
+
 
 
 

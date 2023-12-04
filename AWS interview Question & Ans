@@ -370,6 +370,9 @@ SNS Service -
 ANS: 1.SNS stands for Simple Notification Service, which is a fully managed messaging service provided by Amazon Web Services (AWS).
      2.SNS enables you to send messages or notifications to a variety of endpoints, including email, SMS (text messages), mobile push notifications, and HTTP/HTTPS endpoints.
      3.SNS allows you to send messages to multiple recipients at once, making it a scalable and efficient way to send notifications. 
+     4.It is a web service which makes it easy to set up, operate, and send a notification from the cloud.
+     5. It provides developers with the highly scalable, cost-effective, and flexible capability to publish messages from an application and send them to other applications.
+
 
 2 Why do we use SNS?
 ANS: We use SNS service for - 
@@ -380,7 +383,23 @@ ANS: We use SNS service for -
 5. Application Monitoring and Alarming
 6. Cross-Platform Messaging
 
+3. 3. What is an Amazon SNS function, and how we can configure it.
+Ans: 
 
+4.Difference between Amazon SNS & Amazon SQS.
+Ans: Amazon SNS :                                                                 
+1.SNS stands for Simple Notification Service
+2.SNS is a push-based delivery, i.e., messages are pushed to multiple subscribers.
+3.In SNS service, messages are pushed to the multiple receivers at the same time 
+4.SQS pushing pushed the messages to the subscribers immediately.
+
+Amazon SQS: 
+1.SQS stands for Simple Queue Service.
+2.SQS is a pull-based delivery, i.e., messages are not pushed to the receivers. Users have to pull the messages from the Queue.
+3.In SQS service, messages are not received by the multiple receivers at the same time.
+4.SQS polling introduces some latency in message delivery.
+
+5.
 
 
 

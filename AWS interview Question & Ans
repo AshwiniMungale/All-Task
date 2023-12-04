@@ -290,6 +290,100 @@ Ans : 1.S3 Transfer Acceleration is a feature that leverages Amazon CloudFront's
 3.We need to use it because of Faster Data Transfer, Security, Simplified Configuration, Global Reach.
 
 
+AWS Cloud Trail:-
+
+1. What is a cloud trail ?
+Ans:  Cloud trail is a web service provided by AWS. It  displays the most recent management events for your AWS account.
+
+
+2. Why do we use trails, what is the exact purpose of enabling the trail in cloud production accounts ?
+Ans: We use trails to view, search, download, archive, analyze, and respond to account activity across your AWS infrastructure. The exact purpose of trail Security and Compliance, Visibility and Accountability, Troubleshooting and Debugging, Change Management, Auditing and Reporting.
+  
+3. Explain how we can create a trail in aws cloud trail ?
+Ans: 1. Sign in to the AWS Management Console and open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/.
+     2. In the CloudTrail console, choose Trails in the navigation pane.
+     3. Choose Create trail.
+     4. On the Create trail page, provide a name for the trail and select the AWS S3 bucket where you want to store the log files. You can also choose to apply an S3 bucket policy to the bucket to restrict access to the log files.
+     5. Choose the option to enable the trail for all regions or select specific regions where you want to capture API activity.
+     6. Optionally, you can choose to log data events for S3 buckets and define the data events that you want to capture.
+     7. Choose Create.
+
+4. How can we enable logging for S3 bucket using cloud trails ?
+Ans : 1. Open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/.
+        2. In the navigation pane, choose Trails.
+        3. Select the trail for which you want to enable S3 bucket logging.
+        4. Choose Edit.
+        5. In the Data events section, choose Add S3 bucket.
+        6. In the Add S3 bucket dialog box, select the S3 bucket for which you want to    enable logging.
+        7. Choose the data events that you want to capture for the selected S3 bucket. You can choose : All object, Read only, Write only, All object.
+        8.Choose Save.
+
+5. How do you get the list of all created trailers in your production account ?
+Ans:   Using AWS CLI:
+        1. Open your terminal or command prompt.
+        2. Run the following command to list all the trails in your AWS account: aws cloudtrail describe-trails.
+
+        Using AWS Management Console:
+        1. Sign in to the AWS Management Console and open the CloudTrail console.
+        2. In the CloudTrail console, choose Trails in the navigation pane.
+        3. You will see a list of all the trails created in your account, along with their details such as trail name, S3 bucket name, and status.
+
+6. Can we create a trail for a multi region, if yes then how can we configure it ?
+Ans : Yes, we can create a trail for a multi-region in AWS CloudTrail. To configure a multi-region trail, follow these steps:
+        1. Open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/.
+        2. Choose Trails in the navigation pane.
+        3. Choose Create trail.
+        4. Provide a name for the trail and select the S3 bucket where you want to store the log files.
+        5. In the Management events section, choose the option to enable the trail for all regions.
+        6. In the Data events section, choose Add S3 bucket.
+        7. Select the S3 bucket for which you want to enable logging.
+        8. Choose the data events that you want to capture for the selected S3 bucket.
+        9. Choose Create.
+
+7. How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
+Ans : Yes, you can disable logging for certain events or services in AWS CloudTrail by configuring event selectors for your trail. 
+1. Sign in to the AWS Management Console and open the CloudTrail console 
+2. In the CloudTrail console, choose Trails in the navigation pane.
+3. Select the trail for which you want to configure event selectors.
+4. Choose Edit.
+5. In the Data events section, you can configure event selectors to include or exclude specific services and operations. You can choose to enable logging for all data events, or you can select specific services and operations to include or exclude.
+6. To exclude specific services or operations, choose Add data events.
+7. In the Add data event dialog box, you can specify the service name and operations that you want to exclude from logging.
+8. After configuring the event selectors, choose Save.
+
+8. Real time use case of cloud trail?
+ANS: A real-time use case of AWS CloudTrail is to monitor and audit the activity and changes within your AWS environment.
+
+9. What is cloud trail event history?
+ANS: The CloudTrail event history is 
+1. Search and Filter
+2. Detailed Event Information
+3. Integration with CloudWatch
+4. Compliance and Governance
+
+10 What is log file integrity validation in cloud trail?
+ANS: It is a feature in AWS CloudTrail that helps ensure the integrity and authenticity of log files generated by CloudTrail.
+
+
+SNS Service -
+1 What is SNS?
+ANS: 1.SNS stands for Simple Notification Service, which is a fully managed messaging service provided by Amazon Web Services (AWS).
+     2.SNS enables you to send messages or notifications to a variety of endpoints, including email, SMS (text messages), mobile push notifications, and HTTP/HTTPS endpoints.
+     3.SNS allows you to send messages to multiple recipients at once, making it a scalable and efficient way to send notifications. 
+
+2 Why do we use SNS?
+ANS: We use SNS service for - 
+1. Real-time Notifications
+2. Scalable and Flexible
+3. Event-Driven Architecture
+4. Integration with AWS Services
+5. Application Monitoring and Alarming
+6. Cross-Platform Messaging
+
+
+
+
+
 
 
 

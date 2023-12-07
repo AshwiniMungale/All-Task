@@ -392,7 +392,6 @@ Ans: Amazon SNS :
 2.SNS is a push-based delivery, i.e., messages are pushed to multiple subscribers.
 3.In SNS service, messages are pushed to the multiple receivers at the same time 
 4.SQS pushing pushed the messages to the subscribers immediately.
-
 Amazon SQS: 
 1.SQS stands for Simple Queue Service.
 2.SQS is a pull-based delivery, i.e., messages are not pushed to the receivers. Users have to pull the messages from the Queue.
@@ -405,7 +404,15 @@ Ans :  There are Two format available in  AWS SNS
 
 2) Transport In AWS : HTTP/HTTPS, Amazon SQS, Application,  Email/SMTP,Short Message Service, Lamda.Amazon Event Bridge.
 
-6. 
+Q.6.What is the difference between SNS FIFO & Standard while creating the SNS topic.
+ Ans : SNS FIFO : 1. The FIFO Queue complements the standard Queue.
+ 2. It guarantees ordering, i.e The order in which they are sent is also       received in the same order.
+ 3. A message is delivered once and remains available until the consumer processes and deletes it.
+
+Standard : 1. SQS offers a standard queue as the default queue type.
+           2. It allows you to have an unlimited number of transactions per second.
+           3. more than one copy of a message might be delivered out of order.
+
 
 
 

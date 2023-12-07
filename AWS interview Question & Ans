@@ -413,6 +413,17 @@ Standard : 1. SQS offers a standard queue as the default queue type.
            2. It allows you to have an unlimited number of transactions per second.
            3. more than one copy of a message might be delivered out of order.
 
+Q. 7. On which services are configured with the AWS SNS ?
+Ans :  
+1. Amazon Simple Queue Service (SQS).
+2.AWS Lambda
+3.Amazon Simple Storage Service (S3)
+4.Amazon CloudWatch:
+5.AWS Identity and Access Management (IAM)
+6.Amazon Simple Email Service (SES)
+7.Amazon Simple Workflow Service (SWF)
+
+
 
 
 

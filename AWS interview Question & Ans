@@ -423,6 +423,22 @@ Ans :
 6.Amazon Simple Email Service (SES)
 7.Amazon Simple Workflow Service (SWF)
 
+Q.8.What is 10DLC in AWS ?
+ans : Ten-Digit Long Code, or more commonly shortened as 10DLC, is intended specifically for sending Application-to-Person (A2P). 
+
+
+Q.9.What are FIFO topics on SNS ?
+ans : Amazon SNS FIFO (first in, first out) topics support delivery to both Amazon SQS standard and FIFO queues to provide 
+      customers with flexibility and control when integrating distributed applications that require data consistency in near real-time.
+
+
+Q.10.What is SNS Mobile Push ?
+ans : the ability to send push notification messages directly to apps on mobile devices.
+
+Q.11.On which delivery method do we use and configure the subscription ?
+ans : You use and set up subscriptions through the delivery method specified by the service or product, typically online platforms 
+      where you subscribe and manage your recurring payments or content access.
+
 
 
 
